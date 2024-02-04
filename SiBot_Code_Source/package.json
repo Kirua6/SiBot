@@ -1,0 +1,21 @@
+{
+  "name": "sibot",
+  "version": "1.0.0",
+  "description": "Bot conversationnel avec réponse pré enregistré",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . SiBot --platform=win32 --arch=x64"
+  },
+  "author": {
+    "name": "Van Ruymbeke Killian",
+    "url": "https://kvrcybertechno.online"
+},
+"devDependencies": {
+    "electron": "^28.2.1"
+},
+"dependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
+

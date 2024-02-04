@@ -1,0 +1,185 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1c; 
+}
+
+.title-bar-logo {
+    height: 30px;
+}
+
+.title-bar-container {
+    width: 464px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #1c1c1c; 
+    padding: 10px; 
+    color: white; 
+    -webkit-app-region: drag; 
+}
+
+.title-bar-text {
+    -webkit-app-region: drag; 
+}
+
+.window-controls {
+    -webkit-app-region: no-drag; 
+    display: flex; 
+}
+
+.window-control-btn {
+    background-color: transparent; 
+    color: white; 
+    border: none;
+    font-size: 16px; 
+    margin: 0 5px; 
+    cursor: pointer; 
+    padding: 5px; 
+}
+
+.window-control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+#chatbot-header {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #007bff; /* ancienne color #434BA0 */
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+}
+
+#chatbot {
+    width: 464px;
+    height: 500px; /* toujours -80px d'écart avec height de main.js*/
+    background-color: #1c1c1c; 
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.conversation-area {
+    margin-top: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    scrollbar-width: thin; 
+    scrollbar-color: #1c1c1c #1c1c1c; 
+}
+
+.conversation-area::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.conversation-area-scrollbar {
+    padding-right: 5px; 
+}
+
+.conversation-area::-webkit-scrollbar-thumb {
+    border-radius: 1px; 
+}
+.conversation-area::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 80%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.message-welcome {
+    background-color: #007bff; /* ancienne color #434BA0 */
+}
+
+.message-option, .message-suboption {
+    cursor: pointer;
+    background-color: #28a745; /* ancienne color #7F7F7F */
+    align-self: flex-end; 
+    transition: all 0.5s ease; 
+}
+
+.message-selected {
+    background-color: #007bff; 
+    align-self: flex-start; 
+}
+
+/* Effet de transition au clic */
+.message-moving {
+    transform: translateX(-100%); 
+    opacity: 0; 
+}
+
+.message-answer {
+    background-color: #28a745; /* ancienne color #7F7F7F */
+    align-self: flex-end; 
+    margin-left: auto; 
+    margin-right: 0; 
+}
+
+.message-final {
+    background-color: #007bff; /* ancienne color #434BA0 */
+    margin-top: 10px;
+}
+
+.message-restart {
+    background-color: #28a745; /* ancienne color #7F7F7F */
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.link {
+    display: block;
+    background-color: #007bff; /* ancienne color #434BA0 */
+    color: #e7e7e7;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    max-width: max-content;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #F5F5DC; /* ancienne color #e7e7e7 */
+    color: #007bff; /* ancienne color #434BA0 */
+}
+
+.message-back-button {
+    background-color: #ff7207d6; /* ancienne color #F5F5DC#ff7207d6 */
+    color: #ffffff; /* Couleur du texte */
+    cursor: pointer;
+    margin-top: 10px; /* Espace au-dessus du bouton */
+}
+
+/*
+#####################################
+#  .-. .-')       (`-.   _  .-')    #
+#  \  ( OO )    _(OO  )_( \( -O )   #
+#  ,--. ,--.,--(_/   ,. \,------.   #
+#  |  .'   /\   \   /(__/|   /`. '  #
+#  |      /, \   \ /   / |  /  | |  #
+#  |     ' _) \   '   /, |  |_.' |  #
+#  |  .   \    \     /__)|  .  '.'  #
+#  |  |\   \    \   /    |  |\  \   #
+#  `--' '--'     `-'     `--' '--'  #
+#####################################
+*/
