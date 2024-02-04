@@ -1,5 +1,6 @@
-# SiBot - Bot Conversationnel avec réponses pré-enregistrées pour Support Informatique
+# SiBot 
 
+Bot Conversationnel avec réponses pré-enregistrées pour Support Informatique
 Bienvenue sur le dépôt de SiBot, l'assistant personnel pour répondre aux questions informatiques de vos utilisateurs, il permettra sans doute de décharger votre solution de tickets. Conçu pour faciliter le support technique, SiBot offre des réponses pré-enregistrées aux problèmes informatiques courants.
 
 ## Fonctionnalités
