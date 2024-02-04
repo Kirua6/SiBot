@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title-bar-container">
+            <img src="SiBot.ico" alt="Logo" class="title-bar-logo">
+        <div class="title-bar-text"></div>
+        <div class="window-controls">
+            <button class="window-control-btn" id="minimize-btn">_</button>
+            <button class="window-control-btn" id="maximize-btn">[]</button>
+            <button class="window-control-btn" id="close-btn">X</button>
+        </div>
+    </div> 
+    <div id="chatbot">
+        <div id="chatbot-header">System Infrastructure ChatBot</div>
+            <div id="conversation-area" class="conversation-area">
+                <div id="welcome-message" class="message welcome">
+                    Bienvenue, quelle est votre question ?
+                </div>
+                <div id="options-container">
+                    <!--  options injectées ici par script.js -->
+                </div>
+                <!-- autres éléments ajoutés dynamiquement ici par script.js -->
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>
+
+<!-- 
+#####################################
+#  .-. .-')       (`-.   _  .-')    #
+#  \  ( OO )    _(OO  )_( \( -O )   #
+#  ,--. ,--.,--(_/   ,. \,------.   #
+#  |  .'   /\   \   /(__/|   /`. '  #
+#  |      /, \   \ /   / |  /  | |  #
+#  |     ' _) \   '   /, |  |_.' |  #
+#  |  .   \    \     /__)|  .  '.'  #
+#  |  |\   \    \   /    |  |\  \   #
+#  `--' '--'     `-'     `--' '--'  #
+#####################################
+-->
