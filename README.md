@@ -1,2 +1,2 @@
 # SiBot
-Bot conversationnel avec réponse pré enregistré
+Bot conversationnel avec réponse pré-enregistré
